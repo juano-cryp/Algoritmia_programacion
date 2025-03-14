@@ -1,0 +1,22 @@
+Algoritmo numero_entero
+	escribir "numero entero "
+	leer numero 
+	si numero <= 1 Entonces
+		escribir"no es primo"
+	sino 
+		es_Primo <- verdadero
+		para i <- 2 hasta numero - 1 Hacer
+			
+			si numero mod i = 0 Entonces
+				es_Primo <- falso
+			FinSi
+		finpara
+		
+		si es_Primo Entonces
+			escribir"es primo"
+		SiNo
+			escribir"no es primo"
+		FinSi
+	finsi
+	
+FinAlgoritmo
